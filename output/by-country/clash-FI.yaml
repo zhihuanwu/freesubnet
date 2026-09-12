@@ -5,19 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 FI 01 - xiaohe
-  type: vless
-  server: a2.arshia-nova.ir
+  type: vmess
+  server: 95.81.126.119
   port: 443
-  uuid: cc4a473a-2e15-4fc6-ec54-47c3aa5cec09
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ssl.fastly.com
+  servername: renderer-stream-2-62.mirra.now
   network: ws
   ws-opts:
-    path: /
+    path: /api/v1/gpu-stream/socket
     headers:
-      Host: c12.com
+      Host: renderer-stream-2-62.mirra.now
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
   server: k2.cloud--vpn.site
