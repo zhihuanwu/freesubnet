@@ -6,20 +6,14 @@ log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - xiaohe
   type: vmess
-  server: 7dba81fc3a0b.oylfmxz.cn
-  port: 443
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  server: 165.154.195.38
+  port: 35034
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
   alterId: 0
   cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: ''
-    headers:
-      Host: ''
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaohe
   type: vmess
   server: 165.154.195.38
