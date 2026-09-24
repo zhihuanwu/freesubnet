@@ -20,7 +20,7 @@ proxies:
       Host: c12.com
 - name: 🇫🇮 FI 02 - xiaohe
   type: vless
-  server: k2.cloud--vpn.site
+  server: 151.101.56.6
   port: 443
   uuid: 622cd467-ae00-4afe-b7ee-15dca6b9649a
   udp: true
