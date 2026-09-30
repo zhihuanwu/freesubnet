@@ -4,30 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 TH 01 - xiaohe
+- name: 🇵🇱 PL 01 - xiaohe
   type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  server: pl-irancell7.xelfona.ir
+  port: 2095
+  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
   udp: true
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 TH 01 - xiaohe
+  - 🇵🇱 PL 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 TH 01 - xiaohe
+  - 🇵🇱 PL 01 - xiaohe
 rules:
 - MATCH,PROXIES
