@@ -13,7 +13,7 @@ proxies:
   udp: true
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 217.19.122.200
+  server: 78.159.246.110
   port: 443
   uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   udp: true

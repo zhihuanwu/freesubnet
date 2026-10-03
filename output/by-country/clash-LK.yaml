@@ -29,10 +29,10 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: m.zoom.us
+      Host: cloud.ghostdev.lk
 - name: 🇱🇰 LK 03 - xiaohe
   type: vless
-  server: cdn.zoom.us
+  server: cloud.ghostdev.lk
   port: 80
   uuid: 1eaed465-d720-400b-9f9f-439600a2d093
   udp: true
