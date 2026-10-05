@@ -6,19 +6,6 @@ log-level: info
 proxies:
 - name: 🇮🇪 IE 01 - xiaohe
   type: vless
-  server: 185.148.107.30
-  port: 8880
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime55.workers.dev
-- name: 🇮🇪 IE 02 - xiaohe
-  type: vless
   server: 23.95.225.10
   port: 8443
   uuid: d342d11e-d224-4463-b982-532309285094
@@ -37,13 +24,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - xiaohe
-  - 🇮🇪 IE 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - xiaohe
-  - 🇮🇪 IE 02 - xiaohe
 rules:
 - MATCH,PROXIES
