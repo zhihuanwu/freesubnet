@@ -5,39 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: MYkM/b5ww6KhyHjBKB6OZifqzcXEnDT2jDIBWywYAws=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   type: vless
-  server: 185.141.227.223
+  server: cdn-01.funvideos.video
   port: 443
-  uuid: a443d7bf-f506-46ce-b64d-cf8891c0a9f7
+  uuid: aca886aa-9b51-4eb2-8d7a-12d6b89caf4d
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: z1q3pv4g78.rucdncomp.pro
+  servername: cdn-01.funvideos.video
   network: ws
   ws-opts:
-    path: /useraction/events/b892639b7195/
+    path: /api/53d53ac3/a7fa61/096357bebc62
     headers:
-      Host: z1q3pv4g78.rucdncomp.pro
+      Host: cdn-01.funvideos.video
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
