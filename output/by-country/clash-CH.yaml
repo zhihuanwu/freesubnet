@@ -15,43 +15,18 @@ proxies:
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 CH 02 - xiaohe
-  type: ss
-  server: 132.243.175.144
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
-  udp: true
-- name: 🇨🇭 CH 03 - xiaohe
-  type: vless
-  server: 129.153.71.28
-  port: 28863
-  uuid: 3e956106-7f92-4cbf-bf77-715d3890fa84
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇭 CH 01 - xiaohe
-  - 🇨🇭 CH 02 - xiaohe
-  - 🇨🇭 CH 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇨🇭 CH 01 - xiaohe
-  - 🇨🇭 CH 02 - xiaohe
-  - 🇨🇭 CH 03 - xiaohe
 rules:
 - MATCH,PROXIES
