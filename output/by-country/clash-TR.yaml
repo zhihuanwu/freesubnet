@@ -20,23 +20,9 @@ proxies:
       Host: 194.135.34.118
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   type: vless
-  server: chatgpt.com
+  server: 172.64.155.209
   port: 443
-  uuid: c2425034-91ef-44bf-9fd4-f2be9c1e989a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: sinavm3.soft10.ir
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm3.soft10.ir
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  type: vless
-  server: 104.18.32.47
-  port: 443
-  uuid: c2425034-91ef-44bf-9fd4-f2be9c1e989a
+  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
   udp: true
   tls: true
   skip-cert-verify: true
@@ -53,7 +39,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -61,6 +46,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES
